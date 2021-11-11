@@ -1,30 +1,31 @@
 import React from 'react';
 import './Tablero.css';
-import Celda from './Celda';
+import Celda from '../Celda/Celda';
+import Fondos from '../../assets/Fondos'
+import Frutas from '../../assets/Frutas'
 
-
-
+const cont = Frutas.limon;
+const src = Fondos[3]
 
 const Tablero = () => {
     return (
         <div>
-            <img src='https://yt3.ggpht.com/yti/APfAmoFpjP8Y5C3BdxOEChw76WjA3VvtOqr90SH7iiTD8Wc=s88-c-k-c0x00ffffff-no-rj-mo'></img>
             <table className='tablero'>
-                    <tbody>
+                    <tbody >
                         <tr>
-                        <Celda/>        
-                        <Celda/>        
-                        <Celda/>        
+                        <Celda src={src} cont={cont} />        
+                        <Celda src={src} cont={cont}/>        
+                        <Celda src={src} cont={cont}/>
                         </tr>       
                         <tr>
-                        <Celda/>        
-                        <Celda/>        
-                        <Celda/>        
+                        <Celda src={src} cont={cont}/>
+                        <Celda src={src} cont={cont}/>
+                        <Celda src={src} cont={cont}/>
                         </tr>       
                         <tr>
-                        <Celda/>        
-                        <Celda/>        
-                        <Celda/>        
+                        <Celda src={src} cont={cont}/>
+                        <Celda src={src} cont={cont}/>
+                        <Celda src={src} cont={cont}/>    
                         </tr>       
                         
                         
