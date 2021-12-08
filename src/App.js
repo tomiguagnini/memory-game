@@ -1,5 +1,5 @@
 import Tablero from './Componets/Tablero/Tablero'
-
+import './app.css'
 
 function App() {
   return (
