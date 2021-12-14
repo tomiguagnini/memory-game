@@ -12,8 +12,65 @@ body {
     /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to right, #f7b733, #fc4a1a); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
-    background-color:  rgb(39, 47, 51);
+    background-color:  #181A1B;
 
 }
 
 
+
+
+.tablero{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 600px;
+  width: 500px;
+  margin: 0 auto;
+  
+  
+}
+.celda{
+  color:#fff;
+  margin: 5px;
+  max-height: 150px;
+  max-width: 100px;
+  background-color: #181A1B; 
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10%;
+}
+.celda:hover{
+  transform: scale(0.99);
+}
+.img-card-fondo{
+  height: 100%;
+  width: 100%;
+}
+.img-card-content{
+  
+  height: 70%;
+  width: 100%;
+
+}
+header{
+  text-align: center;
+  color:antiquewhite;
+  padding: 3rem;
+}
+
+
+header span{
+  float: right;
+  
+}
+
+
+
+.item-fondo img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin: 1rem;
+
+}

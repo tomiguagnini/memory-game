@@ -1,10 +1,16 @@
+import Header from './Componets/Header/Header';
 import Tablero from './Componets/Tablero/Tablero'
-import './app.css'
+import { useState } from 'react';
+
+
 
 function App() {
+  const [bkg, setBkg] = useState(1)
   return (
-    <div className="App">
-      <Tablero></Tablero>
+    <div>
+      {bkg}
+      <Header setBkg={setBkg}></Header>
+      <Tablero bkg={bkg}></Tablero>
       
     </div>
   );

@@ -7,7 +7,7 @@ console.log(Frutas)
 
 
 
-const Tablero = () => { 
+const Tablero = ({bkg}) => { 
     const [cards, setCards] = useState([]);
     const [card1, setCard1] = useState({});
     const [card2, setCard2] = useState({});
@@ -31,7 +31,7 @@ const Tablero = () => {
         let currentIndex = array.length,  randomIndex;
       
         // While there remain elements to shuffle...
-        while (currentIndex != 0) {
+        while (currentIndex !== 0) {
       
           // Pick a remaining element...
           randomIndex = Math.floor(Math.random() * currentIndex);
@@ -92,7 +92,7 @@ const Tablero = () => {
                     index={index}
                     name={card.name} 
                     src={card.src}
-                    backImg={Fondos[2]}
+                    backImg={Fondos[bkg]}
                     match={checkMatch}
                     flipCard={flipCard} 
                     unflippedCards={unflippedCards}
